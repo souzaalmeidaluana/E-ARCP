@@ -1,0 +1,47 @@
+
+Gurobi 9.5.1 (win64, gurobi_cl) logging started Wed Jan 18 11:13:43 2023
+
+Set parameter Username
+Set parameter TimeLimit to value 3600
+Set parameter LogFile to value "gurobi.log"
+Academic license - for non-commercial use only - expires 2023-08-27
+Using license file C:\Users\luhsa\gurobi.lic
+
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (win64)
+Copyright (c) 2022, Gurobi Optimization, LLC
+
+Read LP format model from file MPC-ARCP-pulp.lp
+Reading time = 0.02 seconds
+OBJ: 1210 rows, 520 columns, 5464 nonzeros
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 1210 rows, 520 columns and 5464 nonzeros
+Model fingerprint: 0x5c040456
+Variable types: 212 continuous, 308 integer (224 binary)
+Coefficient statistics:
+  Matrix range     [4e-01, 5e+02]
+  Objective range  [5e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+Presolve removed 265 rows and 82 columns
+Presolve time: 0.03s
+Presolved: 945 rows, 438 columns, 5430 nonzeros
+Variable types: 174 continuous, 264 integer (220 binary)
+
+Root relaxation: objective 5.500000e+01, 203 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                      55.0000000   55.00000  0.00%     -    0s
+     0     0   55.00000    0   25   55.00000   55.00000  0.00%     -    0s
+
+Explored 1 nodes (1100 simplex iterations) in 0.07 seconds (0.06 work units)
+Thread count was 12 (of 12 available processors)
+
+Solution count 1: 55 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.500000000000e+01, best bound 5.500000000000e+01, gap 0.0000%
+
+Wrote result file 'MPC-ARCP-pulp.sol'
+
