@@ -1,0 +1,109 @@
+
+Gurobi 9.5.1 (win64, gurobi_cl) logging started Wed Jan 18 11:07:05 2023
+
+Set parameter Username
+Set parameter TimeLimit to value 3600
+Set parameter LogFile to value "gurobi.log"
+Academic license - for non-commercial use only - expires 2023-08-27
+Using license file C:\Users\luhsa\gurobi.lic
+
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (win64)
+Copyright (c) 2022, Gurobi Optimization, LLC
+
+Read LP format model from file MPC-ARCP-pulp.lp
+Reading time = 0.04 seconds
+OBJ: 3223 rows, 1290 columns, 15335 nonzeros
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 3223 rows, 1290 columns and 15335 nonzeros
+Model fingerprint: 0xa4cefda5
+Variable types: 528 continuous, 762 integer (558 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [2e+00, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 607 rows and 183 columns
+Presolve time: 0.12s
+Presolved: 2616 rows, 1107 columns, 16716 nonzeros
+Variable types: 438 continuous, 669 integer (555 binary)
+
+Root relaxation: objective 4.900000e+01, 838 iterations, 0.06 seconds (0.05 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   49.00000    0   75          -   49.00000      -     -    0s
+H    0     0                      -0.0000000   49.00000      -     -    0s
+     0     0   49.00000    0  163   -0.00000   49.00000      -     -    0s
+H    0     0                      12.0000000   49.00000   308%     -    0s
+     0     0   49.00000    0  164   12.00000   49.00000   308%     -    0s
+     0     0   49.00000    0   75   12.00000   49.00000   308%     -    1s
+     0     0   49.00000    0   64   12.00000   49.00000   308%     -    1s
+     0     0   49.00000    0  115   12.00000   49.00000   308%     -    1s
+     0     0   49.00000    0  122   12.00000   49.00000   308%     -    1s
+     0     0   49.00000    0  154   12.00000   49.00000   308%     -    2s
+     0     0   49.00000    0  152   12.00000   49.00000   308%     -    2s
+     0     2   49.00000    0  152   12.00000   49.00000   308%     -    2s
+H   31    40                      19.0000000   49.00000   158%   286    3s
+   277   164   30.00000   26   59   19.00000   49.00000   158%   135    5s
+   676   425   49.00000   17  210   19.00000   49.00000   158%   123   10s
+  1283   779   45.81870   12   71   19.00000   49.00000   158%   114   15s
+  1297   789   46.96536   22  260   19.00000   47.41071   150%   113   20s
+  1325   807   38.49748   38  301   19.00000   46.87563   147%   111   25s
+  1356   829   46.85333   34  135   19.00000   46.85333   147%   123   30s
+  1374   841   32.66032    9  296   19.00000   45.89778   142%   122   35s
+  1398   857   45.59920   20  313   19.00000   45.59920   140%   120   40s
+  1423   875   45.42119   24  268   19.00000   45.42119   139%   127   45s
+  1450   894   43.05289   30  272   19.00000   45.37711   139%   132   50s
+  1474   911   32.66032    9  283   19.00000   45.32673   139%   136   55s
+  1500   929   44.52850   35  221   19.00000   45.31223   138%   141   60s
+  1528   949   45.18801   32  262   19.00000   45.18801   138%   144   65s
+  1562   973   43.87611   36  127   19.00000   45.09946   137%   147   70s
+  1588   990   44.90592   50  298   19.00000   44.98334   137%   145   75s
+  1621  1014   42.88706   36  227   19.00000   44.97044   137%   148   80s
+  1661  1042   30.00000   28  121   19.00000   44.48389   134%   152   85s
+  1701  1070   44.43907   30  132   19.00000   44.43907   134%   154   90s
+  1738  1096   44.26294   25  269   19.00000   44.26294   133%   157   95s
+  1776  1123   43.98403   18  300   19.00000   43.98403   131%   159  100s
+  1813  1150   43.96492   19   84   19.00000   43.96492   131%   166  105s
+  1850  1176   43.05289   30  189   19.00000   43.88156   131%   168  110s
+  1887  1202   43.76511   44  282   19.00000   43.76511   130%   169  115s
+  1930  1234   43.76022   29  262   19.00000   43.76022   130%   172  120s
+  1971  1263   43.69441   20  287   19.00000   43.69441   130%   172  125s
+  2014  1292   43.55928   21  283   19.00000   43.55928   129%   174  130s
+  2055  1322   36.53894   39  267   19.00000   43.54069   129%   176  135s
+  2095  1351   41.98157   44  231   19.00000   43.50066   129%   179  140s
+  2138  1383   43.49202   25  252   19.00000   43.49202   129%   181  145s
+  2182  1414   43.46844   13  243   19.00000   43.46844   129%   183  150s
+  2229  1448   43.43777   15  112   19.00000   43.43777   129%   185  155s
+  2283  1483   40.00000  337  186   19.00000   40.00000   111%   187  160s
+  2841  1340   26.58908  343  136   19.00000   40.00000   111%   193  165s
+  4705  1014 infeasible  359        19.00000   30.00000  57.9%   183  170s
+  6300   273 infeasible  360        19.00000   30.00000  57.9%   187  175s
+
+Cutting planes:
+  Learned: 2
+  Gomory: 9
+  Cover: 20
+  Implied bound: 244
+  Projected implied bound: 1
+  Clique: 2
+  MIR: 48
+  StrongCG: 1
+  Flow cover: 242
+  GUB cover: 9
+  Inf proof: 25
+  Zero half: 49
+  RLT: 38
+  Relax-and-lift: 68
+
+Explored 7098 nodes (1352740 simplex iterations) in 179.34 seconds (118.04 work units)
+Thread count was 12 (of 12 available processors)
+
+Solution count 3: 19 12 -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.900000000000e+01, best bound 1.900000000000e+01, gap 0.0000%
+
+Wrote result file 'MPC-ARCP-pulp.sol'
+

@@ -1,0 +1,77 @@
+
+Gurobi 9.5.1 (win64, gurobi_cl) logging started Wed Jan 18 11:11:19 2023
+
+Set parameter Username
+Set parameter TimeLimit to value 3600
+Set parameter LogFile to value "gurobi.log"
+Academic license - for non-commercial use only - expires 2023-08-27
+Using license file C:\Users\luhsa\gurobi.lic
+
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (win64)
+Copyright (c) 2022, Gurobi Optimization, LLC
+
+Read LP format model from file MPC-ARCP-pulp.lp
+Reading time = 0.02 seconds
+OBJ: 1210 rows, 520 columns, 5464 nonzeros
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 1210 rows, 520 columns and 5464 nonzeros
+Model fingerprint: 0xf9675637
+Variable types: 212 continuous, 308 integer (224 binary)
+Coefficient statistics:
+  Matrix range     [4e-01, 5e+02]
+  Objective range  [5e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+Presolve removed 336 rows and 119 columns
+Presolve time: 0.03s
+Presolved: 874 rows, 401 columns, 4947 nonzeros
+Variable types: 158 continuous, 243 integer (203 binary)
+
+Root relaxation: objective 4.000000e+01, 309 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   40.00000    0   17          -   40.00000      -     -    0s
+H    0     0                      -0.0000000   40.00000      -     -    0s
+     0     0   40.00000    0   75   -0.00000   40.00000      -     -    0s
+     0     0   40.00000    0   74   -0.00000   40.00000      -     -    0s
+     0     0   38.70805    0   84   -0.00000   38.70805      -     -    0s
+     0     0   38.61145    0   91   -0.00000   38.61145      -     -    0s
+     0     0   38.60728    0   87   -0.00000   38.60728      -     -    0s
+     0     0   33.70844    0   75   -0.00000   33.70844      -     -    0s
+     0     0   33.70699    0   79   -0.00000   33.70699      -     -    0s
+     0     0   32.50000    0   61   -0.00000   32.50000      -     -    0s
+     0     0   32.50000    0   60   -0.00000   32.50000      -     -    0s
+     0     0   32.50000    0   67   -0.00000   32.50000      -     -    0s
+     0     0   32.50000    0   67   -0.00000   32.50000      -     -    0s
+     0     0   31.93799    0   59   -0.00000   31.93799      -     -    0s
+     0     0   31.58441    0   79   -0.00000   31.58441      -     -    0s
+     0     0   31.51153    0   81   -0.00000   31.51153      -     -    0s
+     0     0   31.49254    0   80   -0.00000   31.49254      -     -    0s
+     0     0   31.49244    0   82   -0.00000   31.49244      -     -    0s
+     0     0   31.34232    0   78   -0.00000   31.34232      -     -    0s
+     0     0   31.33184    0   85   -0.00000   31.33184      -     -    0s
+     0     0   31.33117    0   80   -0.00000   31.33117      -     -    0s
+     0     0   31.16347    0   82   -0.00000   31.16347      -     -    0s
+     0     0   31.16122    0   83   -0.00000   31.16122      -     -    0s
+     0     0   31.15246    0   89   -0.00000   31.15246      -     -    0s
+     0     0   31.14957    0   97   -0.00000   31.14957      -     -    0s
+H    0     0                      10.0000000   31.14957   211%     -    0s
+     0     0   31.12640    0   83   10.00000   31.12640   211%     -    0s
+     0     0   25.00000    0   15   10.00000   25.00000   150%     -    0s
+     0     0   25.00000    0   41   10.00000   25.00000   150%     -    0s
+
+Cutting planes:
+  RLT: 1
+
+Explored 1 nodes (4454 simplex iterations) in 0.55 seconds (0.35 work units)
+Thread count was 12 (of 12 available processors)
+
+Solution count 2: 10 -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+01, best bound 1.000000000000e+01, gap 0.0000%
+
+Wrote result file 'MPC-ARCP-pulp.sol'
+
