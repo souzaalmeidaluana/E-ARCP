@@ -9,10 +9,10 @@ The “Exact Solution Approach to the Collaborative Multi-vehicle Arc Routing fo
 - A linear programming solver such as GUROBI or CMD
 
 ## 2) Documentation
-Please see the manual available here.
+Please see the manual available here: https://github.com/souzaalmeidaluana/E-ARCP/blob/main/Documentation.pdf
 
 ## 3) License
-GNU General Public License (GPL) [https://github.com/souzaalmeidaluana/E-ARCP/blob/main/LICENSE]
+GNU General Public License (GPL): https://github.com/souzaalmeidaluana/E-ARCP/blob/main/LICENSE
 
 ## References
 Souza Almeida, Luana; Ghasemi, A.; Goerlandt, F. The Collaborative Multi-vehicle Prize Collecting Arc Routing for Connectivity Problem. Submitted to the European Journal of Operational Research.
