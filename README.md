@@ -7,6 +7,7 @@ The “Exact Solution Approach to the Collaborative Multi-vehicle Arc Routing fo
 - Matplotlib
 - Plotly
 - A linear programming solver such as GUROBI or CMD
+- Jupyter Notebook
 
 ## 2) Documentation
 Please see the manual available here: https://github.com/souzaalmeidaluana/E-ARCP/blob/main/Documentation.pdf
